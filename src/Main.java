@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String RDIMove = "";
-            System.out.println("What is your party affiliation? Enter R for Republican, D for Democrat, I for Independent or Other");
+            System.out.println("What is your party affiliation? Enter R for Republican, D for Democrat, or I for Independent");
             RDIMove = in.next();
                 if (RDIMove.equals("R")) {
                     System.out.println("You get a Republican Elephant!");
@@ -12,8 +12,6 @@ public class Main {
                     System.out.println("You get a Democratic Donkey!");
                 } else if (RDIMove.equals("I")) {
                     System.out.println("You get a Independent Man!");
-                } else if (RDIMove.equals("Other")) {
-                    System.out.println("You get a Other!");
-                }
+                } else System.out.println("You get a Other!");
     }
 }
